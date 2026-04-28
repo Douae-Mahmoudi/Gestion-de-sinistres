@@ -242,11 +242,11 @@ class RapportMapperTest {
 
 
     @Nested
-    @DisplayName("Round-trip toDomain → toEntity")
+    @DisplayName("Round-trip toDomain  toEntity")
     class RoundTripTests {
 
         @Test
-        @DisplayName("entity → domain → entity préserve toutes les données")
+        @DisplayName("entity domain entity préserve toutes les données")
         void shouldPreserveDataInRoundTrip() {
             when(utilisateurMapper.toDomain(expertEntity)).thenReturn(expertDomain);
             when(utilisateurMapper.toEntity(expertDomain)).thenReturn(expertEntity);

@@ -215,7 +215,7 @@ class UtilisateurMapperTest {
     class RoundTripTests {
 
         @Test
-        @DisplayName("entity → domain → entity préserve tous les champs")
+        @DisplayName("entity domain entity préserve tous les champs")
         void entityToDomainToEntityPreservesAllFields() {
             Utilisateur d = utilisateurMapper.toDomain(entity);
             UtilisateurEntity reconverted = utilisateurMapper.toEntity(d);
@@ -233,7 +233,7 @@ class UtilisateurMapperTest {
         }
 
         @Test
-        @DisplayName("domain → entity → domain préserve tous les champs")
+        @DisplayName("domain entity domain préserve tous les champs")
         void domainToEntityToDomainPreservesAllFields() {
             UtilisateurEntity e = utilisateurMapper.toEntity(domain);
             Utilisateur reconverted = utilisateurMapper.toDomain(e);

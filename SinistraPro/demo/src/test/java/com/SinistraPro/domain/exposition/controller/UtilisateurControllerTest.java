@@ -44,7 +44,7 @@ class UtilisateurControllerTest {
     private PasswordEncoder passwordEncoder;
 
     @MockBean
-    private JwtService jwtService; // Indispensable pour que le contexte démarre
+    private JwtService jwtService;
 
     private Utilisateur mockUser;
 

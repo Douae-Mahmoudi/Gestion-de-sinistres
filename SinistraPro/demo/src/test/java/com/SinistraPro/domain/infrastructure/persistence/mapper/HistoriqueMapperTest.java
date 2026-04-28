@@ -82,7 +82,6 @@ class HistoriqueMapperTest {
                 .build();
     }
 
-    // ─── toDomain ───────────────────────────────────────────────────────────────
 
     @Nested
     @DisplayName("toDomain")
