@@ -25,7 +25,7 @@ export function AuthPage({ onLoginSuccess }) {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // ── Gestion du code à 6 chiffres ─────────────────────
+  //Gestion du code à 6 chiffres
   const handleCodeChange = (index, value) => {
     if (!/^\d?$/.test(value)) return; // chiffres seulement
     const newCode = [...code];
@@ -52,7 +52,6 @@ export function AuthPage({ onLoginSuccess }) {
     e.preventDefault();
   };
 
-  // ── Submit login / register ───────────────────────────
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
