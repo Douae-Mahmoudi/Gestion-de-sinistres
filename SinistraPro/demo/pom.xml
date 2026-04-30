@@ -9,11 +9,11 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version> <!-- ← corrigé : 4.0.5 n'existe pas -->
+        <version>3.2.5</version>
         <relativePath/>
     </parent>
 
-    <groupId>com.SinistraPro</groupId> <!-- ← corrigé : espace supprimé -->
+    <groupId>com.SinistraPro</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SinistraPro</name>
@@ -25,14 +25,11 @@
 
     <dependencies>
 
-        <!-- ═══ WEB ═══════════════════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <!-- ← corrigé : spring-boot-starter-webmvc n'existe pas -->
         </dependency>
 
-        <!-- ═══ SECURITY ══════════════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -44,7 +41,6 @@
             <version>2.5.0</version>
         </dependency>
 
-        <!-- ═══ JWT ═══════════════════════════════════════════ -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -63,7 +59,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- ═══ JPA + POSTGRESQL ══════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -74,13 +69,12 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- ═══ VALIDATION ════════════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- ═══ PDF (iText7) ══════════════════════════════════ -->
+        <!--  PDF (iText7)-->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>kernel</artifactId>
@@ -97,13 +91,11 @@
             <version>7.2.5</version>
         </dependency>
 
-        <!-- ═══ MAIL ══════════════════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
-        <!-- ═══ LOMBOK ════════════════════════════════════════ -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -114,11 +106,9 @@
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- ═══ TEST ══════════════════════════════════════════ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <!-- ← corrigé : remplace tous les *-test inexistants -->
             <scope>test</scope>
         </dependency>
         <dependency>
